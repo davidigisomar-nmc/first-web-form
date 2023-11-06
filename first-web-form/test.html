@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/webform.css" />
+    <title>First Web Form</title>
+  </head>
+  <body>
+    <h1>My First Web Form</h1>
+    <form
+      id="survey"
+      action="https://jkorpela.fi/cgi-bin/echo.cgi"
+      method="post"
+    >
+      <fieldset id="Info">
+        <legend>Information</legend>
+        <div class="formStyle">
+          <label for="firstName">First Name</label>
+          <input
+            type="text"
+            name="fName"
+            id="firstName"
+            placeholder="First Name"
+            required
+          />
+        </div>
+        <div class="formStyle">
+          <label for="lastName">Last Name</label>
+          <input
+            type="text"
+            name="lName"
+            id="lastName"
+            placeholder="Last Name"
+            required
+          />
+        </div>
+        <div class="formStyle">
+          <label for="email">Email</label>
+          <input
+            type="email"
+            name="e-mail"
+            id="email"
+            placeholder="email@example.com"
+            required
+          />
+        </div>
+        <div class="formStyle">
+          <label for="tel">Phone</label>
+          <input
+            type="tel"
+            name="number"
+            id="tel"
+            placeholder="(nnn) nnn-nnn"
+            pattern="^\d{10}$|^(\(\d{3}\)\s*)?\d{3}[\s-]?\d{4}$"
+            required
+            maxlength="13"
+          />
+        </div>
+        <div class="formStyle">
+          <label for="birthday">Birthday</label>
+          <input type="date" name="b-day" id="birthday" required />
+        </div>
+        <div id="button">
+          <input type="submit" value="Submit" />
+          <input type="reset" value="Cancel" />
+        </div>
+      </fieldset>
+    </form>
+  </body>
+</html>

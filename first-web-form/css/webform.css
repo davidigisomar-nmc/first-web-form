@@ -1,0 +1,54 @@
+body, #firstName, #lastName, #email, #tel, #birthday {
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif
+}
+
+h1 {
+    background-color: pink;
+    border-radius: 100px;
+    padding: 20px;
+    text-align: center;
+    color: white;
+    font-size: 50px;
+}
+
+.formStyle {
+    display: flex;
+    flex-flow: row wrap;
+    margin: 8px 0px;
+}
+
+.formStyle > * {
+    flex: 150px;
+}
+
+form#survey {
+    background-color: rgb(253, 211, 203);
+    border-radius: 25px;
+    flex: 1 1 300px;
+    font-size: 25px;
+    padding: 10px;
+    margin: 20px;
+}
+
+legend {
+    background-color: rgb(224, 153, 155);
+    border-radius: 15px;
+    color: white;
+    padding: 5px;
+}
+
+div#button {
+    text-align: right;
+    width: 100%;
+}
+
+input[type='submit'], input[type='reset'] {
+    font-size: 15px;
+    padding: 5px;
+    margin: 5px;
+}
+
+input:focus, select:focus, textarea:focus {
+    background-color: lightblue;
+}
+
